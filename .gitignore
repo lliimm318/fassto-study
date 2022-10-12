@@ -3,3 +3,11 @@
 mvnw
 *.cmd
 .DS_Store
+*.lock
+*.properties
+*.bin
+.idea/.name
+*.jar
+gradlew
+*.bat
+HELP.md
