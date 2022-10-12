@@ -2,3 +2,4 @@
 *.xml
 mvnw
 *.cmd
+.DS_Store
