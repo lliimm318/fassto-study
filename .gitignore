@@ -11,3 +11,5 @@ mvnw
 gradlew
 *.bat
 HELP.md
+*.probe
+*.class
