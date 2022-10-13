@@ -1,4 +1,4 @@
-package com.example.study.service;
+package com.example.study.domain.service;
 
 import com.example.study.payload.request.PostRequest;
 import com.example.study.payload.response.PostResponse;
