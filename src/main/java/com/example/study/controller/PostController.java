@@ -2,7 +2,7 @@ package com.example.study.controller;
 
 import com.example.study.payload.request.PostRequest;
 import com.example.study.payload.response.PostResponse;
-import com.example.study.service.PostService;
+import com.example.study.domain.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
