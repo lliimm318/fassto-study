@@ -1,4 +1,4 @@
-package com.example.study.service;
+package com.example.study.domain.service;
 
 import com.example.study.entity.Post;
 import com.example.study.exception.PostNotFoundException;
