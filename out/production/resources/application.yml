@@ -4,3 +4,12 @@ spring:
     username: root
     password: qwe123
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+auth:
+  jwt:
+    exp:
+      access: ${ACCESS_TOKEN_EXP:3600}
+      refresh: ${REFRESH_TOKEN_EXP:10000}
+    secret: ${SECRET_KEY:ZmFhc3Rv}
+    header: ${HEADER:Authorization}
+    prefix: ${PREFIX:Bearer}
