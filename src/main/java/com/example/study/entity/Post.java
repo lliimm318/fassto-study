@@ -31,10 +31,9 @@ public class Post {
     @Column(name = "updated_at")
     private LocalDate updatedAt;
 
-    public Post updatePost(String title, String content, String writer, LocalDate updatedAt) {
+    public Post updatePost(String title, String content, LocalDate updatedAt) {
         this.title = title;
         this.content = content;
-        this.writer = writer;
         this.updatedAt = updatedAt;
 
         return this;

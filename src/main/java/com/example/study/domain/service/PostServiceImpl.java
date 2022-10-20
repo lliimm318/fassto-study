@@ -2,9 +2,11 @@ package com.example.study.domain.service;
 
 import com.example.study.entity.Post;
 import com.example.study.exception.PostNotFoundException;
+import com.example.study.exception.UserNotAccessException;
 import com.example.study.payload.request.PostRequest;
 import com.example.study.payload.response.PostResponse;
 import com.example.study.repository.PostRepository;
+import com.example.study.security.auth.AuthenticationFacade;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -18,13 +20,14 @@ import java.util.stream.Collectors;
 public class PostServiceImpl implements PostService {
 
     private final PostRepository postRepository;
+    private final AuthenticationFacade facade;
 
     @Override
     public void createPost(PostRequest request) {
         Post post = Post.builder()
                 .title(request.getTitle())
                 .content(request.getContent())
-                .writer(request.getWriter())
+                .writer(facade.getUser().getName())
                 .createdAt(LocalDate.now((ZoneId.of("Asia/Seoul"))))
                 .build();
 
@@ -36,9 +39,12 @@ public class PostServiceImpl implements PostService {
         Post post = postRepository.findById(postId)
                 .orElseThrow(PostNotFoundException::new);
 
+        if (!facade.getUser().getName().equals(post.getWriter())) {
+            new UserNotAccessException();
+        }
+
         post.updatePost(request.getTitle(),
                         request.getContent(),
-                        request.getWriter(),
                         LocalDate.now(ZoneId.of("Asia/Seoul")));
 
         postRepository.save(post);
@@ -77,6 +83,10 @@ public class PostServiceImpl implements PostService {
     public void deletePost(Integer postId) {
         Post post = postRepository.findById(postId)
                 .orElseThrow(PostNotFoundException::new);
+
+        if (!facade.getUser().getName().equals(post.getWriter())) {
+            new UserNotAccessException();
+        }
 
         postRepository.delete(post);
     }
