@@ -4,6 +4,7 @@ import com.example.study.payload.request.PostRequest;
 import com.example.study.payload.response.PostResponse;
 import com.example.study.domain.service.PostService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,13 +17,13 @@ public class PostController {
     private final PostService postService;
 
     @PostMapping
-    public void creatPost(@RequestBody PostRequest request) {
+    public void creatPost(@Validated @RequestBody PostRequest request) {
         postService.createPost(request);
     }
 
     @PatchMapping("/{postId}")
     public void updatePost(@PathVariable Integer postId,
-                           @RequestBody PostRequest request) {
+                           @Validated @RequestBody PostRequest request) {
         postService.updatePost(request, postId);
     }
 
