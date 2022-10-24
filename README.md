@@ -19,7 +19,7 @@ A2. 어플리케이션으로 요청을 보내서 확인할 수 있습니다. spr
 **Q3. java에는 LocalDateTIme, offsetDateTime, ZonedDateTime 등등 시간을 나타내는 자료형이 많죠? 데이터 베이스에도 DateTIme, timeStemp등등이 있습니다. 이들의 차이점에 대해 말해주세요**
 
 A3.   
-![image](https://user-images.githubusercontent.com/66578746/197448625-002560ad-67c9-4a9a-a69a-0fac28bbe001.png)
+<img width="555" alt="thumb" src="https://user-images.githubusercontent.com/66578746/197448791-ce75ff21-6909-44c2-9c8e-75a37e357e9a.png">
 <img width="478" alt="스크린샷 2022-10-24 오후 1 15 36 3" src="https://user-images.githubusercontent.com/66578746/197447569-09bc3dcd-45e7-4a6b-a8b4-b4c00b70856d.png">
 
 **JAVA의 TIME API.**
