@@ -19,7 +19,12 @@ A2. 어플리케이션으로 요청을 보내서 확인할 수 있습니다. spr
 **Q3. java에는 LocalDateTIme, offsetDateTime, ZonedDateTime 등등 시간을 나타내는 자료형이 많죠? 데이터 베이스에도 DateTIme, timeStemp등등이 있습니다. 이들의 차이점에 대해 말해주세요**
 
 A3.   
+<img width="478" alt="스크린샷 2022-10-24 오후 1 15 36 3" src="https://user-images.githubusercontent.com/66578746/197447569-09bc3dcd-45e7-4a6b-a8b4-b4c00b70856d.png">
+
 **JAVA의 TIME API.**
+1. LocalDate, LocalDateTime, LocalTime은 시간대에 대하 정보가 전혀 없는 API 입니다. 한국에서 2022-10-24T00:00:00이면 미국에서도 같은 시간입니다. 이러한 경우 생일 같은 경우에 적합합니다. 
+2. OffsetDateTime은 LocalDateTime + ZoneOffset 입니다. ZoneOffset은 UTC 기준으로 시간을 나타낸 것이라서 우리나라의 경우 KST를 사용해서 UTC +09:00으로 표기 됩니다.
+3. ZonedDateTime은 OffsetDateTime + ZoneRegion 입니다. 
 
 **MySQL - DATETIME vs TIMESTEMP.**  
-DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 time_zone에 맞는 시간이 나오게 됩니다. 그래서 글로벌 서비스시에 TIME STEMP를 사용하며 좋을 것 같다!
+DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 time_zone에 맞는 시간이 나오게 됩니다. 그래서 글로벌 서비스시에 TIME STEMP를 사용하는게 더 적합할 것 같습니다!
