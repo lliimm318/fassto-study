@@ -20,6 +20,6 @@ A2. 어플리케이션으로 요청을 보내서 확인할 수 있습니다. spr
 
 A3.   
 **JAVA의 TIME API**. 
-크게 보면
+크게 보면.  
 **MySQL - DATETIME vs TIMESTEMP.**  
 DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 time_zone에 맞는 시간이 나오게 됩니다. 그래서 글로벌 서비스시에 TIME STEMP를 사용하며 좋을 것 같다!
