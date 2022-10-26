@@ -17,5 +17,4 @@ auth:
 management:
   endpoints:
     web:
-      include: health,info,beans,conditions
-      exclude: threaddump, heapdump
+      include: health
