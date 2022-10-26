@@ -13,7 +13,8 @@ A1. 유저 토큰 검사를 통해서 권한이 있는 유저만 가능하도록
 
 **Q2.이 어플리케이션이 실행중인지 어떻게 알 수 있을까요?**
 
-A2-1. 어플리케이션으로 요청을 보내서 확인할 수 있습니다. spring에서 actuator를 implement를 하고, *{url}/actuator/health* 요청을 통해 살아있는지 여부를 response로 확인할 수 있습니다.
+A2-1. 어플리케이션으로 요청을 보내서 확인할 수 있습니다. spring에서 actuator를 implement를 하고, *{url}/actuator/health* 요청을 통해 살아있는지 여부를 response로 확인할 수 있습니다.   
+
 A2-2. 직접구성하기   
 <br/><br/>
 
