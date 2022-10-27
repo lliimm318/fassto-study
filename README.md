@@ -15,7 +15,7 @@ A1. 유저 토큰 검사를 통해서 권한이 있는 유저만 가능하도록
 
 A2-1. 어플리케이션으로 요청을 보내서 확인할 수 있습니다. spring에서 actuator를 implement를 하고, *{url}/actuator/health* 요청을 통해 살아있는지 여부를 response로 확인할 수 있습니다.   
 
-A2-2. 직접구성하기   
+A2-2. spring actuactor를 사용하지 않고 직접 구현할 수도 있습니다. get method를 사용해서 프로젝트의 실행 여부를 알 수 있는 api 구현했습니다.
 <br/><br/>
 
 **Q3. java에는 LocalDateTIme, offsetDateTime, ZonedDateTime 등등 시간을 나타내는 자료형이 많죠? 데이터 베이스에도 DateTIme, timeStemp등등이 있습니다. 이들의 차이점에 대해 말해주세요**
