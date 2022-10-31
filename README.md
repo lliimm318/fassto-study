@@ -32,4 +32,4 @@ A3.
 **MySQL - DATETIME vs TIMESTEMP.**  
 DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 time_zone에 맞는 시간이 나오게 됩니다. 그래서 글로벌 서비스시에 TIME STEMP를 사용하는게 더 적합할 것 같습니다!
 
-**Q4 서버와 데이터베이스의 Default Time Zone은 어떻게 확인하고, 이 타임존을 설정해보고 우선순위는 어떻게 되는지 말해주세요**
+**Q4 서버와 데이터베이스의 Default Time Zone은 어떻게 확인하고, 이 타임존을 설정해보고 우선순위는 어떻게 될까요오?**
