@@ -5,7 +5,7 @@
 
 1. [Q1 Data](#Q1.-데이터를-어디까지-믿을-수-있을까요?)
 2. [Q2 Health API](#Q2.-이-어플리케이션이-실행중인지-어떻게-알-수-있을까요?)
-3. [Q3 Time](#Q3.-java에는-LocalDateTIme,-OffsetDateTime,-ZonedDateTime-등등-시간을-나타내는-자료형이-많죠?-데이터-베이스에도-DateTIme,-timeStemp등등이-있습니다.-이들의 차이점에-대해-말해주세요)
+3. [Q3 Time](#Q3.-java에는-LocalDateTIme,-OffsetDateTime,-ZonedDateTime-등등-시간을-나타내는-자료형이-많죠?-데이터-베이스에도-DateTIme,-timeStemp등등이-있습니다.-이들의-차이점에-대해-말해주세요)
 4. [Q4 DefaultTimeZone](#Q4.-서버와-데이터베이스의-Default-Time-Zone은-어떻게-확인하고,-이-타임존을-설정해보고-우선순위는-어떻게-될까요?)
 <br/></br>
 
