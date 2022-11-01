@@ -1,12 +1,5 @@
 # 교육
 간단한 게시판 crud를 구현했습니다.
-
-## 목차
-
-1. [Q1 Data](#Q1.-데이터를-어디까지-믿을-수-있을까요?)
-2. [Q2 Health API](#Q2.-이-어플리케이션이-실행중인지-어떻게-알-수-있을까요?)
-3. [Q3 Time](#Q3.-java에는-LocalDateTIme,-OffsetDateTime,-ZonedDateTime-등등-시간을-나타내는-자료형이-많죠?-데이터-베이스에도-DateTIme,-timeStemp등등이-있습니다.-이들의-차이점에-대해-말해주세요)
-4. [Q4 DefaultTimeZone](#Q4.-서버와-데이터베이스의-Default-Time-Zone은-어떻게-확인하고,-이-타임존을-설정해보고-우선순위는-어떻게-될까요?)
 <br/></br>
 
 #### Q1. 데이터를 어디까지 믿을 수 있을까요?
@@ -32,8 +25,9 @@ A3.
 2. OffsetDateTime은 LocalDateTime + ZoneOffset 입니다. ZoneOffset은 UTC 기준으로 시간을 나타낸 것이라서 우리나라의 경우 KST를 사용해서 UTC +09:00으로 표기 됩니다.
 3. ZonedDateTime은 OffsetDateTime + ZoneRegion 입니다. 
 
-**MySQL - DATETIME vs TIMESTEMP.**  
+**MySQL - DATETIME vs TIMESTEMP.**
 DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 time_zone에 맞는 시간이 나오게 됩니다. 그래서 글로벌 서비스시에 TIME STEMP를 사용하는게 더 적합할 것 같습니다!
+<br/><br/>
 
 #### Q4. 서버와 데이터베이스의 Default Time Zone은 어떻게 확인하고, 이 타임존을 설정해보고 우선순위는 어떻게 될까요?      
 A4. 응애..
