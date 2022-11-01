@@ -30,4 +30,7 @@ DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 ti
 <br/><br/>
 
 #### Q4. 서버와 데이터베이스의 Default Time Zone은 어떻게 확인하고, 이 타임존을 설정해보고 우선순위는 어떻게 될까요?      
-A4. 응애..
+A4.<br/>
+1. DataBase
+> SELECT @@GLOBAL.time_zone, @@SESSION.time_zone, @@system_time_zone;
+<img width="531" alt="스크린샷 2022-11-01 오전 10 04 22" src="https://user-images.githubusercontent.com/66578746/199136796-7b96c897-2cfa-4096-a08a-fdd0b61e9291.png">
