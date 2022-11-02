@@ -39,4 +39,6 @@ A4.<br/>
 <img width="209" alt="스크린샷 2022-11-01 오전 10 16 56" src="https://user-images.githubusercontent.com/66578746/199139813-f1ec3f68-3e98-45a6-bafb-3737238c43c0.png">
 요로코롬 실행시키면 system_time_zone이 KST라서 한국 표준 현재 시간이 나옵니당. 
 
+> 이건 서버에서 시간을 실행 시키면 나오는 결과이다.
+<img width="353" alt="스크린샷 2022-11-02 오후 3 18 08(3)" src="https://user-images.githubusercontent.com/66578746/199412839-56818290-2107-428d-9c0f-ac64250be0dd.png">
 
