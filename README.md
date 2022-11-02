@@ -35,9 +35,8 @@ A4.<br/>
 > SELECT @@GLOBAL.time_zone, @@SESSION.time_zone, @@system_time_zone;
 <img width="531" alt="스크린샷 2022-11-01 오전 10 04 22" src="https://user-images.githubusercontent.com/66578746/199136796-7b96c897-2cfa-4096-a08a-fdd0b61e9291.png">
 
-> SELECT now();
+> SELECT now(); 한국 표준시간이 결과로 나온다
 <img width="209" alt="스크린샷 2022-11-01 오전 10 16 56" src="https://user-images.githubusercontent.com/66578746/199139813-f1ec3f68-3e98-45a6-bafb-3737238c43c0.png">
-요로코롬 실행시키면 system_time_zone이 KST라서 한국 표준 현재 시간이 나옵니당. 
 
 > 이건 서버에서 시간을 실행 시키면 나오는 결과이다.
 <img width="353" alt="스크린샷 2022-11-02 오후 3 18 08(3)" src="https://user-images.githubusercontent.com/66578746/199412839-56818290-2107-428d-9c0f-ac64250be0dd.png">
