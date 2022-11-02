@@ -41,7 +41,7 @@ A4.<br/>
 ### 2. Server to DB
 <img width="406" alt="스크린샷 2022-11-02 오후 4 40 07" src="https://user-images.githubusercontent.com/66578746/199428731-9e3bb233-dd37-4201-bcd4-fd1828c3a05e.png">
 위 사진은 서버에서 데이터 베이스로 데이터를 저장한 결과이다.<br/>          
-1. **서버와 디비 모두 KST** KST 시간대로 저장<br/>     
-2. **서버는 KST, 디비는 UTC** UTC 시간대로 저장<br/>       
-3. ##서버는 UTC, 디비는 KST## UTC 시간대로 저장<br/>            
+1. 서버와 디비 모두 KST KST 시간대로 저장<br/>     
+2. 서버는 KST, 디비는 UTC UTC 시간대로 저장<br/>       
+3. 서버는 UTC, 디비는 KST UTC 시간대로 저장<br/>            
 인데... 둘중에 하나만 UTC라도 UTC 기준으로 시간이 저장되는 것을 확인할 수 있었다! 
