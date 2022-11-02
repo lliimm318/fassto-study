@@ -49,3 +49,12 @@ A4.<br/>
 2. 서버는 KST, 디비는 UTC UTC 시간대로 저장<br/>       
 3. 서버는 UTC, 디비는 KST UTC 시간대로 저장<br/>            
 인데... 둘중에 하나만 UTC라도 UTC 기준으로 시간이 저장되는 것을 확인할 수 있었습니다! 
+
+### 4. DB to Server
+1. 서버는 UTC, 디비는 KST
+<img width="258" alt="스크린샷 2022-11-02 오후 4 37 04(3)" src="https://user-images.githubusercontent.com/66578746/199433193-ec5d7cd1-4012-4ad6-ace3-a638e5c993d0.png">
+2. 서버는 KST, 디비는 UTC
+<img width="253" alt="스크린샷 2022-11-02 오후 4 39 01(3)" src="https://user-images.githubusercontent.com/66578746/199433254-2e766350-b443-4d6b-b7bc-db8ed0345720.png">
+이건 예상했던 것과 결과가 달라서 놀랐습니다... 서버 기준에서 데이터를 불러오니까 서버가 KTC라면 UTC인 디비라도 KST 로 나올 것이라고 예상했었습니다... 이 경우에도 둘중에 하나만 UTC라도 UTC 기준으로 시간을 불러오는 것을 확인할 수 있었습니다.
+
+
