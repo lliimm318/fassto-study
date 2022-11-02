@@ -31,13 +31,13 @@ DATETIME과 달리 TIMESTEMP는 time_zone으 가지고 있어서 시스템의 ti
 
 #### Q4. 서버와 데이터베이스의 Default Time Zone은 어떻게 확인하고, 이 타임존을 설정해보고 우선순위는 어떻게 될까요?      
 A4.<br/>
-1. DataBase
+### 1. DataBase
 > SELECT @@GLOBAL.time_zone, @@SESSION.time_zone, @@system_time_zone;
 <img width="531" alt="스크린샷 2022-11-01 오전 10 04 22" src="https://user-images.githubusercontent.com/66578746/199136796-7b96c897-2cfa-4096-a08a-fdd0b61e9291.png">
 
 > SELECT now(); system_time_zone이 KST라서 한국 표준시간이 결과로 나온다
-<img width="209" alt="스크린샷 2022-11-01 오전 10 16 56" src="https://user-images.githubusercontent.com/66578746/199139813-f1ec3f68-3e98-45a6-bafb-3737238c43c0.png">
-### Server to DB
+<img width="209" alt="스크린샷 2022-11-01 오전 10 16 56" src="https://user-images.githubusercontent.com/66578746/199139813-f1ec3f68-3e98-45a6-bafb-3737238c43c0.png"> <br/>
+### 2. Server to DB
 <img width="406" alt="스크린샷 2022-11-02 오후 4 40 07" src="https://user-images.githubusercontent.com/66578746/199428731-9e3bb233-dd37-4201-bcd4-fd1828c3a05e.png">
 위 사진은 서버에서 데이터 베이스로 데이터를 저장한 결과이다.<br/>      
 1. 서버와 디비 모두 KST<br/>        
