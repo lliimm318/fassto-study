@@ -37,11 +37,12 @@ A4.<br/>
 
 > SELECT now(); system_time_zone이 KST라서 한국 표준시간이 결과로 나온다
 <img width="209" alt="스크린샷 2022-11-01 오전 10 16 56" src="https://user-images.githubusercontent.com/66578746/199139813-f1ec3f68-3e98-45a6-bafb-3737238c43c0.png">
-<br/><br/>
+<br/>
+
 ### Server to DB
 <img width="406" alt="스크린샷 2022-11-02 오후 4 40 07" src="https://user-images.githubusercontent.com/66578746/199428731-9e3bb233-dd37-4201-bcd4-fd1828c3a05e.png">
-위 사진은 서버에서 데이터 베이스로 데이터를 저장한 결과이다. 
-1. 서버와 디비 모두 KST
-2. 서버는 KST, 디비는 UTC
-3. 서버는 UTC, 디비는 KST
+위 사진은 서버에서 데이터 베이스로 데이터를 저장한 결과이다.        
+1. 서버와 디비 모두 KST        
+2. 서버는 KST, 디비는 UTC       
+3. 서버는 UTC, 디비는 KST            
 인데... 둘중에 하나만 UTC라도 UTC 기준으로 시간이 저장되는 것을 확인할 수 있었다! 
