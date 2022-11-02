@@ -38,3 +38,4 @@ A4.<br/>
 > SELECT now();
 <img width="209" alt="스크린샷 2022-11-01 오전 10 16 56" src="https://user-images.githubusercontent.com/66578746/199139813-f1ec3f68-3e98-45a6-bafb-3737238c43c0.png">
 요로코롬 실행시키면 현재 시간이 나옵니당
+
