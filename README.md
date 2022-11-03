@@ -60,7 +60,8 @@ A4.<br/>
 ### 5. OS 시간
 1. OS의 시간대를 UTC, 서버는 KST
 <img width="349" alt="스크린샷 2022-11-02 오후 7 53 32(2)" src="https://user-images.githubusercontent.com/66578746/199628927-6e05c2c1-8fcf-4d0d-9825-6f2b9b7e8fe3.png">
-OS는 UTC이지만, 서버를 KST로 설정해서 LocalDateTime, TimeStamp 모두 KST 기준으로 출력된 것을 확인할 수 있었습니다.
+OS는 UTC이지만, 서버를 KST로 설정해서 LocalDateTime, TimeStamp 모두 KST 기준으로 출력된 것을 확인할 수 있었습니다.            
+
 2. OS는 UTC, 서버는 KST, 디비는 KST 
 <img width="291" alt="스크린샷 2022-11-02 오후 7 58 13(2)" src="https://user-images.githubusercontent.com/66578746/199629248-897553b1-7edf-476f-aaff-9a3a8c0271ef.png">
 디비에는 11월2일의 값이 저장되어 있습니다. 이걸 Timestamp는 KST 디비 그대로의 값을 불러왔고, LocalDateTime은 OS의 UTC 시간대에 맞춘 시간을 출력하는 것을 확인할 수 있었습니다.
