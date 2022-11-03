@@ -68,6 +68,8 @@ OS는 UTC이지만, 서버를 KST로 설정해서 LocalDateTime, TimeStamp 모�
 <br/></br>            
 2. OS는 UTC, 서버는 KST, 디비는 KST 
 <img width="291" alt="스크린샷 2022-11-02 오후 7 58 13(2)" src="https://user-images.githubusercontent.com/66578746/199629248-897553b1-7edf-476f-aaff-9a3a8c0271ef.png">
-디비에는 11월2일의 값이 저장되어 있습니다. 이걸 Timestamp는 KST 디비 그대로의 값을 불러왔고, LocalDateTime은 OS의 UTC 시간대에 맞춘 시간을 출력하는 것을 확인할 수 있었습니다.
-
+디비에는 11월2일의 값이 저장되어 있습니다. 이걸 Timestamp는 KST 디비 그대로의 값을 불러왔고, LocalDateTime은 OS의 UTC 시간대에 맞춘 시간을 출력하는 것을 확인할 수 있었습니다.<br/>
+3. OS는 KST, 서버와 디비는 UTC
+<img width="291" alt="스크린샷 2022-11-03 오전 10 16 53(2)" src="https://user-images.githubusercontent.com/66578746/199630796-7a9916ba-e7a5-44ce-bdf7-7b34ca7b4351.png">
+OS가 KST로 설정되어 있어도, 서버랑 디비가 UTC로 설정되어 있어서 값이 변하지 않았습니다/
 
