@@ -43,6 +43,7 @@ A4.<br/>
 서버에서의 시간대를 확인할 수 있습니당
 
 ### 3. Server to DB
+> TimeZone.setDefault 사용!
 <img width="406" alt="스크린샷 2022-11-02 오후 4 40 07" src="https://user-images.githubusercontent.com/66578746/199428731-9e3bb233-dd37-4201-bcd4-fd1828c3a05e.png">
 위 사진은 서버에서 데이터 베이스로 데이터를 저장한 결과입니다.<br/>          
 1. 서버와 디비 모두 KST KST 시간대로 저장<br/>     
