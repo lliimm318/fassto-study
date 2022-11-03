@@ -58,7 +58,7 @@ A4.<br/>
 <br/></br>
 2. 서버는 KST, 디비는 UTC
 <img width="299" alt="스크린샷 2022-11-03 오전 10 13 08(2)" src="https://user-images.githubusercontent.com/66578746/199630469-73045081-d21c-4d83-94ea-e081de9996b6.png">
-저장된 시간이 UTC 기준이라서 서버 기준인 KST로 변환해서 출력된다.
+저장된 시간이 UTC 기준이라서 서버 기준인 KST로 변환해서 출력됩니다.
 
 
 ### 5. OS 시간
