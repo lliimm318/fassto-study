@@ -43,7 +43,6 @@ A4.<br/>
 서버에서의 시간대를 확인할 수 있습니당
 
 ### 3. Server to DB
-> TimeZone.setDefault 사용!
 <img width="406" alt="스크린샷 2022-11-02 오후 4 40 07" src="https://user-images.githubusercontent.com/66578746/199428731-9e3bb233-dd37-4201-bcd4-fd1828c3a05e.png">
 위 사진은 서버에서 데이터 베이스로 데이터를 저장한 결과입니다.<br/>          
 1. 서버와 디비 모두 KST KST 시간대로 저장<br/>     
@@ -52,11 +51,15 @@ A4.<br/>
 인데... 둘중에 하나만 UTC라도 UTC 기준으로 시간이 저장되는 것을 확인할 수 있었습니다! 
 
 ### 4. DB to Server
+> TimeZone.setDefault 사용!
 1. 서버는 UTC, 디비는 KST
-<img width="258" alt="스크린샷 2022-11-02 오후 4 37 04(3)" src="https://user-images.githubusercontent.com/66578746/199433193-ec5d7cd1-4012-4ad6-ace3-a638e5c993d0.png">
+<img width="301" alt="스크린샷 2022-11-03 오전 10 10 27(2)" src="https://user-images.githubusercontent.com/66578746/199630248-5c55727d-4882-4cd4-9b04-2acb90c30ef4.png">
+둘 다 서버 UTC 기준으로 시간을 불러옵니다
+<br/></br>
 2. 서버는 KST, 디비는 UTC
-<img width="253" alt="스크린샷 2022-11-02 오후 4 39 01(3)" src="https://user-images.githubusercontent.com/66578746/199433254-2e766350-b443-4d6b-b7bc-db8ed0345720.png">
-이건 예상했던 것과 결과가 달라서 놀랐습니다... 서버 기준에서 데이터를 불러오니까 서버가 KTC라면 UTC인 디비라도 KST 로 나올 것이라고 예상했었습니다... 이 경우에도 둘중에 하나만 UTC라도 UTC 기준으로 시간을 불러오는 것을 확인할 수 있었습니다.
+<img width="299" alt="스크린샷 2022-11-03 오전 10 13 08(2)" src="https://user-images.githubusercontent.com/66578746/199630469-73045081-d21c-4d83-94ea-e081de9996b6.png">
+저장된 시간이 UTC 기준이라서 서버 기준인 KST로 변환해서 출력된다.
+
 
 ### 5. OS 시간
 1. OS의 시간대를 UTC, 서버는 KST
