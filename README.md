@@ -73,4 +73,6 @@ OS는 UTC이지만, 서버를 KST로 설정해서 LocalDateTime, TimeStamp 모�
 3. OS는 KST, 서버와 디비는 UTC
 <img width="291" alt="스크린샷 2022-11-03 오전 10 16 53(2)" src="https://user-images.githubusercontent.com/66578746/199630796-7a9916ba-e7a5-44ce-bdf7-7b34ca7b4351.png">
 OS가 KST로 설정되어 있어도, 서버랑 디비가 UTC로 설정되어 있어서 값이 변하지 않았습니다/
+<br/></br>
 
+## Q5. ExceptionHandling을 왜 할까요?
