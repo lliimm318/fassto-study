@@ -1,6 +1,6 @@
 package com.example.study.security;
 
-import com.example.study.exception.InvalidTokenException;
+import com.example.study.exception.exceptions.InvalidTokenException;
 import com.example.study.security.auth.AuthDetails;
 import com.example.study.security.auth.AuthDetailsService;
 import io.jsonwebtoken.Jwts;

@@ -1,7 +1,7 @@
 package com.example.study.security.auth;
 
 import com.example.study.entity.User;
-import com.example.study.exception.UserNotFoundException;
+import com.example.study.exception.exceptions.UserNotFoundException;
 import com.example.study.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
