@@ -16,7 +16,7 @@ public class LogRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         logger.info("");
         logger.info("==================================");
-        logger.info("v3");
+        logger.info("v4");
         logger.info("study seoyoung's server");
         logger.info("ZonedDateTime: " + ZonedDateTime.now());
         logger.info("==================================");
