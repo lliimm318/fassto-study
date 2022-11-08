@@ -82,5 +82,5 @@ OS가 KST로 설정되어 있어도, 서버랑 디비가 UTC로 설정되어 있
 <br/></br>
 
 ## Q6. @RestControllerAdvice와 @ControllerAdvice 의 차이!
-둘은 @RestController와 @Controller의 차이처럼 HTTP Response Body가 생성되는 방식에 대한 차이가 있습니다. @Controller는 주로 View를 반환하기 위해 쓰입니다. 하지만 컨트롤러가 Data를 반환해야 하는 경우도 있습니다.. 이때 컨트롤러에서는 데이터를 반환하기 위해 @ResponseBody를 사용해야 하는데, 이를 통해 Controller도 Json 형태로 객체 데이터를 반환할 수 있게됩니다! 이게 둘의 차이점이고요!<br/>
+ 둘은 @RestController와 @Controller의 차이처럼 HTTP Response Body가 생성되는 방식에 대한 차이가 있습니다. @Controller는 주로 View를 반환하기 위해 쓰입니다. 하지만 컨트롤러가 Data를 반환해야 하는 경우도 있습니다.. 이때 컨트롤러에서는 데이터를 반환하기 위해 @ResponseBody를 사용해야 하는데, 이를 통해 Controller도 Json 형태로 객체 데이터를 반환할 수 있게됩니다! 이게 둘의 차이점이고요!<br/>
 
