@@ -20,21 +20,21 @@ public class BaseExceptionHandler {
     }
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
-    protected ResponseEntity<ErrorResponse> baseExceptionHandle(final Exception e) {
+    protected ResponseEntity<ErrorResponse> exceptionHandler(final Exception e) {
         return new ResponseEntity<>(new ErrorResponse(400, e.getMessage()),
                 HttpStatus.valueOf(400));
     }
 
     //validation @RequestBody
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    protected ResponseEntity<ErrorResponse> exceptionHandel(final MethodArgumentNotValidException e) {
+    protected ResponseEntity<ErrorResponse> exceptionHandler(final MethodArgumentNotValidException e) {
         return new ResponseEntity<>(new ErrorResponse(404, e.getMessage()),
                 HttpStatus.valueOf(404));
     }
 
     //@RequestParam
     @ExceptionHandler(MissingServletRequestParameterException.class)
-    protected ResponseEntity<ErrorResponse> exceptionHandel(final MissingServletRequestParameterException e) {
+    protected ResponseEntity<ErrorResponse> exceptionHandler(final MissingServletRequestParameterException e) {
         return new ResponseEntity<>(new ErrorResponse(404, e.getMessage()),
                 HttpStatus.valueOf(404));
     }
