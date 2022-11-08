@@ -1,8 +1,8 @@
 package com.example.study.domain.service;
 
 import com.example.study.entity.Post;
-import com.example.study.exception.PostNotFoundException;
-import com.example.study.exception.UserNotAccessException;
+import com.example.study.exception.exceptions.PostNotFoundException;
+import com.example.study.exception.exceptions.UserNotAccessException;
 import com.example.study.payload.request.PostRequest;
 import com.example.study.payload.response.PostResponse;
 import com.example.study.repository.PostRepository;
@@ -24,7 +24,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public void createPost(PostRequest request) {
-        Post post = Post.builder()
+        final var post = Post.builder()
                 .title(request.getTitle())
                 .content(request.getContent())
                 .writer(facade.getUser().getName())
@@ -36,7 +36,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public void updatePost(PostRequest request, Integer postId) {
-        Post post = postRepository.findById(postId)
+        final var post = postRepository.findById(postId)
                 .orElseThrow(PostNotFoundException::new);
 
         if (!facade.getUser().getName().equals(post.getWriter())) {
@@ -52,7 +52,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostResponse getPost(Integer postId) {
-        Post post = postRepository.findById(postId)
+        final var post = postRepository.findById(postId)
                 .orElseThrow(PostNotFoundException::new);
 
         return PostResponse.builder()
@@ -81,7 +81,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public void deletePost(Integer postId) {
-        Post post = postRepository.findById(postId)
+        final var post = postRepository.findById(postId)
                 .orElseThrow(PostNotFoundException::new);
 
         if (!facade.getUser().getName().equals(post.getWriter())) {
