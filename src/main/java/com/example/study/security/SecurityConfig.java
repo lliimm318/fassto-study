@@ -27,7 +27,7 @@ public class SecurityConfig {
                 .formLogin().disable()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/register").permitAll()
-                .antMatchers(HttpMethod.POST, "/auth").permitAll()
+                .antMatchers(HttpMethod.POST, "/login").permitAll()
                 .antMatchers(HttpMethod.GET, "/health").permitAll()
                 .anyRequest().authenticated()
                 .and()
