@@ -1,8 +1,9 @@
 package com.example.study.domain.service;
 
 import com.example.study.entity.User;
-import com.example.study.exception.UserAlreadyException;
-import com.example.study.exception.UserNotFoundException;
+import com.example.study.exception.exceptions.UserIdAlreadyException;
+import com.example.study.exception.exceptions.UserNameAlreadyException;
+import com.example.study.exception.exceptions.UserNotFoundException;
 import com.example.study.payload.request.AuthRequest;
 import com.example.study.payload.request.RegisterRequest;
 import com.example.study.payload.response.TokenResponse;
@@ -26,11 +27,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public void register(RegisterRequest request) {
         userRepository.findById(request.getId())
-                .orElseThrow(UserAlreadyException::new);
-        userRepository.findById(request.getName())
-                .orElseThrow(UserAlreadyException::new);
+                .ifPresent(user -> {
+                    throw new UserIdAlreadyException();
+                });
+        userRepository.findByName(request.getName())
+                .ifPresent(user -> {
+                    throw new UserNameAlreadyException();
+                });
 
-        User user = User.builder()
+        final var user = User.builder()
                 .id(request.getId())
                 .name(request.getName())
                 .password(passwordEncoder.encode(request.getPassword()))
