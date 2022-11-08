@@ -13,8 +13,3 @@ auth:
     secret: ${SECRET_KEY:ZmFhc3Rv}
     header: ${HEADER:Authorization}
     prefix: ${PREFIX:Bearer}
-
-management:
-  endpoints:
-    web:
-      include: health
