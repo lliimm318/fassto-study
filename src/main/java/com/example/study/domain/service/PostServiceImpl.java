@@ -40,7 +40,7 @@ public class PostServiceImpl implements PostService {
                 .orElseThrow(PostNotFoundException::new);
 
         if (!facade.getUser().getName().equals(post.getWriter())) {
-            new UserNotAccessException();
+            throw new UserNotAccessException();
         }
 
         post.updatePost(request.getTitle(),
@@ -85,7 +85,7 @@ public class PostServiceImpl implements PostService {
                 .orElseThrow(PostNotFoundException::new);
 
         if (!facade.getUser().getName().equals(post.getWriter())) {
-            new UserNotAccessException();
+            throw new UserNotAccessException();
         }
 
         postRepository.delete(post);
