@@ -87,5 +87,6 @@ OS가 KST로 설정되어 있어도, 서버랑 디비가 UTC로 설정되어 있
  @Controller는 주로 View를 반환하기 위해 쓰입니다. 하지만 컨트롤러가 Data를 반환해야 하는 경우도 있습니다.. 이때 컨트롤러에서는 데이터를 반환하기 위해 @ResponseBody를 사용해야 하는데, 이를 통해 Controller도 Json 형태로 객체 데이터를 반환할 수 있게됩니다. @RestControllerAdvice도 @ResponseBody가 붙어 있어 응답을 Json으로 내려주는 차이가 있습니다!
  <br/></br>
  ControllerAdvice는 여러 컨트롤러에 대해 전역적으로 ExceptionHandler를 적용해줍니다. ControllerAdvice 어노테이션 안에는 @Component 어노테이션이 있어서 ControllerAdvice가 선언된 클래스는 스프링 빈으로 등록됩니다. 그래서 전역적으로 에러를 핸들링 할 수 있게 된답니다.
+ <br/><br/>
  
  ## Q7. 테스트 코드를 작성해 볼까요?
