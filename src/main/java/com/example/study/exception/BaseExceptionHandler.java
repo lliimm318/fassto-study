@@ -50,7 +50,7 @@ public class BaseExceptionHandler {
                 HttpStatus.valueOf(404));
     }
 
-    //@RequestParam
+    //validation @RequestParam
     @ExceptionHandler(MissingServletRequestParameterException.class)
     protected ResponseEntity<ErrorResponse> exceptionHandler(final MissingServletRequestParameterException e, HttpServletRequest request) {
         return new ResponseEntity<>(new ErrorResponse(

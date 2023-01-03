@@ -5,6 +5,10 @@ spring:
     password: qwe123
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+server:
+  error:
+    include-message: always
+
 auth:
   jwt:
     exp:
