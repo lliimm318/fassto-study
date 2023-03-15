@@ -14,7 +14,7 @@
 2. spring actuactor를 사용하지 않고 직접 구현할 수도 있습니다. get method를 사용해서 프로젝트의 실행 여부를 알 수 있는 api 구현했습니다.
 <br/><br/>
 
-## Q3. java에는 LocalDateTIme, OffsetDateTime, ZonedDateTime 등등 시간을 나타내는 자료형이 많죠? 데이터 베이스에도 DateTIme, timeStemp등등이 있습니다. 이들의 차이점에 대해 말해주세요
+## Q3. java에는 LocalDateTIme, OffsetDateTime, ZonedDateTime 등등 시간을 나타내는 자료형이 많죠? 데이터 베이스에도 DateTIme, timeStemp 등등이 있습니다. 이들의 차이점에 대해 말해주세요
  
 <img width="555" alt="thumb" src="https://user-images.githubusercontent.com/66578746/197448791-ce75ff21-6909-44c2-9c8e-75a37e357e9a.png">
 <img width="478" alt="스크린샷 2022-10-24 오후 1 15 36 3" src="https://user-images.githubusercontent.com/66578746/197447569-09bc3dcd-45e7-4a6b-a8b4-b4c00b70856d.png">
